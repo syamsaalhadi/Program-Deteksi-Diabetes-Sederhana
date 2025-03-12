@@ -1,0 +1,79 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.landing-container {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 0 8px 40px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 600px; /* Membuat card lebih besar */
+    width: 90%; /* Responsif */
+}
+
+.landing-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 60px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+    font-size: 2.8rem; /* Ukuran font lebih besar */
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.4rem; /* Ukuran font lebih besar */
+    margin-bottom: 30px;
+}
+
+.get-started-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff4081;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.get-started-btn:hover {
+    background-color: #ff79b0;
+    transform: translateY(-3px);
+}
+
+.get-started-btn:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.2rem; /* Ukuran font lebih kecil untuk perangkat kecil */
+    }
+
+    p {
+        font-size: 1.1rem; /* Ukuran font lebih kecil untuk perangkat kecil */
+    }
+
+    .get-started-btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
